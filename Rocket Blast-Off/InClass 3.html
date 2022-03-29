@@ -1,0 +1,156 @@
+<!--Monil  Patel, Student id:- 8775412
+	Rushil Shah, Student id:- 8751835
+	Chahat, Student id:- 8725404-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rocket BlastOff</title>
+	<link rel="shortcut icon" type="image" href="Rocket.ico">
+	<style>
+
+		html{
+			background-color: #2F2FA2;
+		}
+
+		h1{
+			color: white;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			border: solid;
+		}
+
+		#submit{
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			width: 30%;
+            font-size: 22px;
+    		background-color: #F64C72;
+    		color: white;
+    		font-family: 'Kalam', cursive;
+    		border: 0px;
+    		padding: 10px;
+    		height: 50px;
+    		box-shadow: 4px 4px 0px white;
+    		border-radius: 8px;
+			position: relative;
+			left: 530px;
+			top: 20px;
+		}
+
+		#r {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			background-color: lightgrey;
+			margin: auto;
+			position: relative;
+			top: 100px;
+		}
+
+	span {
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding-top: 60px;
+		text-align: center;
+		font-size: 40px;
+		position: relative;
+		top: 45px;
+		font-weight: bold;
+		font-family: Copperplate Gothic;
+		}	
+
+	 #ra{
+		width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			background-color: lightgrey;
+			margin: auto;
+			position: relative;
+			bottom: 500px;
+			right: 280px;
+	}
+	
+	#b{
+		font-size: 30px;
+		font-weight: bold;
+		font-family: Copperplate Gothic;
+		position: relative;
+		bottom: 548px;
+		left: 465px;
+	}
+
+	#lyr{
+		border: solid;
+		color: white;
+		font-size: 17px;
+		font-weight: bold;
+		font-family: Copperplate Gothic;
+		position: relative;
+		bottom: 300px;
+	}
+
+	#n{
+		border: solid;
+		color: white;
+		font-size: 13px;
+		font-weight: bold;
+		font-family: Copperplate Gothic;
+		position: relative;
+		top: 150px;
+		right: 200px;
+
+	}
+
+	#Image{
+		position: relative;
+		bottom: 150px;
+
+	}
+
+
+	</style>
+	
+</head>
+
+<body>
+	<h1>Welcome to Rocket Ship Launcher!</h1>
+	<button id="submit" onclick="result()">Launch the Rocket!</button>
+	<div id="r">
+	<span id="seconds">Coutdown to BlastOff!</span>
+</div>
+
+<text id = "lyr">Click on this button to launch your rocket.</text>
+<text id = "n"> Note: When you will click on the button a countdown of 10 seconds will start and at the end of the countdown your rocket will be launched!</text>
+<img id = "Image" src= "Rocket.ico" alt="Charity" width= 150px >
+<div id="ra">
+</div>
+<text id="b">&#8594</text>
+
+<script type="text/javascript">
+	function result(){
+
+var counter = 11;
+
+		setInterval( function(){
+			counter--;
+
+			if( counter >= 0 ){
+				id = document.getElementById("seconds");
+				id.innerHTML = counter;
+			}
+
+			if( counter === 0 ){
+				id.innerHTML = "BlastOff! Rocket Launched!";
+			}
+		}, 1000);
+}
+</script>
+
+</body>
+</html>

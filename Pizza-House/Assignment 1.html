@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA HOUSE</title>
+    <link rel="shortcut icon" type="image" href="logo1.jfif">
+    <style>
+        html{
+            background-color: #FFC033;
+        }
+
+        body{
+            width: 400px; 
+            height: 750px;
+            margin: 20px auto; 
+            padding: 20px; 
+            border: solid black; 
+            background-color: skyblue;
+            position: relative;
+            right: 200px;
+        }
+
+        h1{
+            font-family: cursive;
+            position: relative;
+            left: 26px;
+        }
+
+        
+        p{
+            font-size: 20px;
+            font-family: Copperplate Gothic;
+            font-weight: bold;
+        }
+
+        #P{
+            position: relative;
+            top: -60px;
+            font-size: 15px;
+            color: lightcoral;
+        }
+
+        #B1{
+            position: relative;
+            left: 200px;
+            top: -41px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #B2{
+            position: relative;
+            left: 200px;
+            top: -41px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #B3{
+            position: relative;
+            left: 200px;
+            top: -41px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #B4{
+            position: relative;
+            left: 200px;
+            top: -41px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #B5{
+            position: relative;
+            left: 200px;
+            top: -41px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #B6{
+            position: relative;
+            left: 140px;
+            top: -25px;
+            font-size: 18px;
+            font-family: Lucida Sans;
+            font-weight: bold;
+        }
+
+        #val1{
+            position: relative;
+            left: 0px;
+            font-size: 17px;
+        }
+
+        aside{
+            width: 400px; 
+            height: 555px;
+            margin: 20px auto; 
+            padding: 20px; 
+            border: 2px solid black; 
+            background-color: skyblue;
+            position: relative;
+            left: 500px;
+            top: -550px;
+        }
+
+        aside h1{
+            position: relative;
+            left: 150px;
+            top: -10px;
+            font-family: Copperplate Gothic;
+        }
+
+        aside p #val6{
+            border: solid;
+        }
+
+        table{
+            border: solid black; 
+            margin-top: 20px; 
+            border-collapse: collapse; 
+            width: 200px; 
+            position: relative;
+            left: 50px;
+        }
+
+        td{
+            border:  solid black; 
+            padding: 10px; 
+            text-align: right; 
+            font-weight: bold;
+
+        }
+        th{
+            border:  solid black; 
+        }
+
+        nav{
+            border: solid;
+            position: relative;
+            bottom: 1400px;
+            right: -525px;
+        }
+
+        .Image{
+            position: relative;
+            right: 870px;
+            bottom: 600px;
+        }
+        
+
+        </style>
+    <script src="custom.js"></script> 
+</head>
+<body>
+    <main>
+        <h1>Welcome to Your Pizza &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHouse!</h1>
+        <p>Margeritta : X <text id="val1"></p>      
+                <button id="B1" onclick="atC1()">Add to Cart</button>
+                <p id="P">(Price:- $8)</p>
+        <p>8 Cheese : X <text id="val2"></p>
+                <button id="B2" onclick="atC2()">Add to Cart</button>
+                 <p id="P">(Price:- $10)</p>
+        <p>4 Meat : X <text id="val3"></p>
+                <button id="B3" onclick="atC3()">Add to Cart</button>
+                <p id="P">(Price:- $6)</p>
+        <p>Macroni : X <text id="val4"></p>
+                <button id="B4" onclick="atC4()">Add to Cart</button>
+                <p id="P">(Price:- $9)</p>
+        <p>Pasta : X <text id="val5"></p>
+                <button id="B5" onclick="atC5()">Add to Cart</button>
+                <p id="P">(Price:- $11)</p>
+
+        <button id="B6" onclick="gst();">Checkout</button>
+
+    </main>
+
+    <aside>
+        <h1>Receipt</h1>
+        <p>Customer Name:- <text id = "val6"></p>
+        <table border="1">
+           <tr>
+               <td>Pizza</td><td>Quantity</td><td>$</td>
+           </tr>
+
+            <tr>
+                <td id="P1"></td>
+                <td id="valA"></td><td id="M_price"></td>
+            </tr>
+            <tr>
+                <td id="P2"></td>
+                <td id="valB"></td><td id="C_price"></td>
+            </tr>
+            <tr>
+                <td id="P3"></td>
+                <td id="valC"></td><td id="Mt_price"></td>
+            </tr>
+            <tr>
+                <td id="P4"></td>
+                <td id="valD"></td><td id="Mac_price"></td>
+            </tr>
+            <tr>
+                <td id="P5"></td>
+                <td id="valE"></td><td id="P_price"></td>
+            </tr>
+            <td>COST (Before Tax)</td>
+                <td>_</td><td id="sum"></td>
+            </tr>
+
+              <td>GST @ 13%</td><td>_</td><th id="gst"></th>
+                <tr>
+                    <td>Total Cost</td><td id="unittotal"></td><td id="grandtotal"></td>
+                    
+                </tr>
+                
+    
+    </table>
+    
+            <img class = "Image" src= "Pizza House.jfif" alt="Now open" width= 300px >
+
+    </aside>
+
+<nav>
+    <h1>You have to select how many pizzas do you want after you click on Add to Cart. You don't want one select zero in it and you gonna regret it!</h1>
+
+</nav>
+
+
+</body>
+</html>
+

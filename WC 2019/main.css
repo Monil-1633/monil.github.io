@@ -1,0 +1,19 @@
+body{
+	width:1300px;
+    height:1550px;    
+    margin: 30px auto;
+    padding: 30px;
+}
+
+header{
+	background-image: url(cod.jpg);
+	background-color: #FFC033;
+}
+
+
+.heading{
+	font-size: 15px;
+	font-style: bold;
+	color: blue;
+}
+
